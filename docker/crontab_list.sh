@@ -226,4 +226,4 @@
 #京豆兑换为喜豆
 33 9 * * * node /scripts/jd_exchangejxbeans.js >> /scripts/logs/jd_exchangejxbeans.log 2>&1
 #早起签到
-1 6,7 * * * node /scripts/jd_cfd.ts ts-node >> /jd/log/jd_cfd.log 2>&1
+1 6,7 * * * node /scripts/jd_cfd11.js >> /jd/log/jd_cfd11.log 2>&1
