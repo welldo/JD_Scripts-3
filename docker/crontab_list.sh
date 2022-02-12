@@ -207,3 +207,5 @@
 33 9 * * * node /scripts/jd_exchangejxbeans.js >> /scripts/logs/jd_exchangejxbeans.log 2>&1
 #京喜财富岛红包兑换
 0 * * * * node /scripts/jx_exchange_fortune.js >> /scripts/logs/jx_exchange_fortune.log 2>&1
+#微信签到领红包
+3 0,11 * * * node /scripts/jd_wq_wxsign.js >> /scripts/logs/jd_wq_wxsign.log 2>&1
