@@ -5,14 +5,12 @@
 
 ##############活动##############
 
-#运行所有脚本
-#30 5 * * * node /scripts/runall.js >> /scripts/logs/runall.log 2>&1
 #宠汪汪
-#35 0-23/2 * * * node /scripts/jd_joy.js >> /scripts/logs/jd_joy.log 2>&1
+35 0-23/2 * * * node /scripts/jd_joy.js >> /scripts/logs/jd_joy.log 2>&1
 #宠汪汪兑换
-#59 7,15,23 * * * node /scripts/jd_joy_reward.js >> /scripts/logs/jd_joy_reward.log 2>&1
+59 7,15,23 * * * node /scripts/jd_joy_reward.js >> /scripts/logs/jd_joy_reward.log 2>&1
 #点点券
-#10 6,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
+10 6,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
 #惊喜签到
 0 3,8 * * * node /scripts/jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
 #东东超市兑换奖品
@@ -38,7 +36,7 @@
 #半点京豆雨
 30 0-23/1 * * * node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #东东超市
-#39 * * * * node /scripts/jd_superMarket.js >> /scripts/logs/jd_superMarket.log 2>&1
+39 * * * * node /scripts/jd_superMarket.js >> /scripts/logs/jd_superMarket.log 2>&1
 #领京豆额外奖励
 10 3,9 * * * node /scripts/jd_bean_home.js >> /scripts/logs/jd_bean_home.log 2>&1
 #京东资产变动通知
@@ -126,17 +124,17 @@
 #众筹许愿池
 20 0,2 * * * node /scripts/jd_wish.js >> /scripts/logs/jd_wish.log 2>&1
 #宠汪汪偷狗粮
-#40 0-21/3 * * * node /scripts/jd_joy_steal.js >> /scripts/logs/jd_joy_steal.log 2>&1
+40 0-21/3 * * * node /scripts/jd_joy_steal.js >> /scripts/logs/jd_joy_steal.log 2>&1
 #汪汪乐园每日任务
 0 0,7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
 #汪汪乐园养joy
 20 0-23/3 * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1
 #领现金兑换
-#0 0 * * * node /scripts/jd_cash_exchange.js >> /scripts/logs/jd_cash_exchange.log 2>&1
+0 0 * * * node /scripts/jd_cash_exchange.js >> /scripts/logs/jd_cash_exchange.log 2>&1
 #宠汪汪喂食
-#15 0-23/1 * * * node /scripts/jd_joy_feedPets.js >> /scripts/logs/jd_joy_feedPets.log 2>&1
+15 0-23/1 * * * node /scripts/jd_joy_feedPets.js >> /scripts/logs/jd_joy_feedPets.log 2>&1
 #宠汪汪赛跑
-#15 10,12 * * * node /scripts/jd_joy_run.js >> /scripts/logs/jd_joy_run.log 2>&1
+15 10,12 * * * node /scripts/jd_joy_run.js >> /scripts/logs/jd_joy_run.log 2>&1
 #领京豆
 38 8,13 * * * node /scripts/jd_mdou.js >> /scripts/logs/jd_mdou.log 2>&1
 #清空购物车
@@ -152,15 +150,15 @@
 # 领券中心签到
 5 0 * * * node /scripts/jd_ccSign.js >> /scripts/logs/jd_ccSign.log 2>&1
 #超级直播间盲盒抽京豆
-#1 18,20 * * * node /scripts/jd_super_mh.js >> /scripts/logs/jd_super_mh.log 2>&1
+1 18,20 * * * node /scripts/jd_super_mh.js >> /scripts/logs/jd_super_mh.log 2>&1
 # 内容鉴赏官
 5 2,5,16 * * * node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
 # 东东世界兑换
-#0 0 * * * node /scripts/jd_ddworld_exchange.js >> /scripts/logs/jd_ddworld_exchange.log 2>&1
+0 0 * * * node /scripts/jd_ddworld_exchange.js >> /scripts/logs/jd_ddworld_exchange.log 2>&1
 # 天天提鹅
 20 * * * * node /scripts/jd_daily_egg.js >> /scripts/logs/jd_daily_egg.log 2>&1
 # 翻翻乐
-#20 * * * * node /scripts/jd_big_winner.js >> /scripts/logs/jd_big_winner.log 2>&1
+20 * * * * node /scripts/jd_big_winner.js >> /scripts/logs/jd_big_winner.log 2>&1
 # 京东极速版签到免单
 18 8,12,20 * * * node /scripts/jd_speed_signfree.js >> /scripts/logs/jd_speed_signfree.log 2>&1
 # 牛牛福利
@@ -172,11 +170,11 @@
 #农场集勋章
 16 7,16 * * * node /scripts/jd_medal.js >> /scripts/logs/jd_medal.log 2>&1
 #美丽研究院--兑换
-#1 7,12,19 * * * node /scripts/jd_beauty_ex.js >> /scripts/logs/jd_beauty_ex.log 2>&1
+1 7,12,19 * * * node /scripts/jd_beauty_ex.js >> /scripts/logs/jd_beauty_ex.log 2>&1
 #锦鲤
 5 0 * * * node /scripts/jd_angryKoi.js >> /scripts/logs/jd_angryKoi.log 2>&1
 #京东保价
-#41 23 * * * node /scripts/jd_price.js >> /scripts/logs/jd_price.log 2>&1
+41 23 * * * node /scripts/jd_price.js >> /scripts/logs/jd_price.log 2>&1
 #见缝插针
 15 3,20 * * * node /scripts/jd_jfcz.js >> /scripts/logs/jd_jfcz.log 2>&1
 #玩一玩成就
@@ -184,7 +182,7 @@
 # 京喜签到-喜豆
 10 2,19 * * * node /scripts/jx_sign_xd.js >> /scripts/logs/jx_sign_xd.log 2>&1
 # 京东答题领金豆
-#22 6,18 * * * node /scripts/jx_jddt.js >> /scripts/logs/jx_jddt.log 2>&1
+22 6,18 * * * node /scripts/jx_jddt.js >> /scripts/logs/jx_jddt.log 2>&1
 # 京东通天塔--签到
 31 8,21 * * * node /scripts/jd_m_sign.js >> /scripts/logs/jd_m_sign.log 2>&1
 # 年货节签到
