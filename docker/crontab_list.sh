@@ -5,6 +5,8 @@
 
 ##############活动##############
 
+#运行所有脚本
+#30 5 * * * node /scripts/runall.js >> /scripts/logs/runall.log 2>&1
 #宠汪汪
 #35 0-23/2 * * * node /scripts/jd_joy.js >> /scripts/logs/jd_joy.log 2>&1
 #宠汪汪兑换
@@ -40,7 +42,7 @@
 #领京豆额外奖励
 10 3,9 * * * node /scripts/jd_bean_home.js >> /scripts/logs/jd_bean_home.log 2>&1
 #京东资产变动通知
-0 12 * * * node /scripts/jd_bean_change.js >> /scripts/logs/jd_bean_change.log 2>&1
+0 7,18 * * * node /scripts/jd_bean_change.js >> /scripts/logs/jd_bean_change.log 2>&1
 #京东极速版
 0 1,7 * * * node /scripts/jd_speed_sign.js >> /scripts/logs/jd_speed_sign.log 2>&1
 #取关京东店铺和商品
