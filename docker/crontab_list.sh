@@ -209,3 +209,5 @@
 0 * * * * node /scripts/jx_exchange_fortune.js >> /scripts/logs/jx_exchange_fortune.log 2>&1
 #微信签到领红包
 3 0,11 * * * node /scripts/jd_wq_wxsign.js >> /scripts/logs/jd_wq_wxsign.log 2>&1
+#颜究种植园
+30 6-20/3 * * *  node /scripts/jd_xinruimz.js >> /scripts/logs/jd_xinruimz.log 2>&1
