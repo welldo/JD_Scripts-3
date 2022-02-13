@@ -34,7 +34,9 @@
 #京东多合一签到
 0 4,14 * * * node /scripts/jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
 #半点京豆雨
-30 0-23/1 * * * node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
+30 0-23/1 * * * node /scripts/jd_redrain_half.js >> /scripts/logs/jd_redrain_half.log 2>&1
+#整点京豆雨
+0 0-23/1 * * * node /scripts/jd_redrain.js >> /scripts/logs/jd_redrain.log 2>&1
 #东东超市
 39 * * * * node /scripts/jd_superMarket.js >> /scripts/logs/jd_superMarket.log 2>&1
 #领京豆额外奖励
@@ -115,8 +117,6 @@
 0 8 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1
 #京东赚赚
 10 0 * * * node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1
-#获取互助码
-20 13 * * 6 node /scripts/jd_get_share_code.js >> /scripts/logs/jd_get_share_code.log 2>&1
 #特务
 1,10 0 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1
 #送豆得豆
@@ -185,10 +185,6 @@
 22 6,18 * * * node /scripts/jx_jddt.js >> /scripts/logs/jx_jddt.log 2>&1
 # 京东通天塔--签到
 31 8,21 * * * node /scripts/jd_m_sign.js >> /scripts/logs/jd_m_sign.log 2>&1
-# 年货节签到
-23 2,22 * * * node /scripts/jd_nh_sign.js >> /scripts/logs/jd_nh_sign.log 2>&1
-# 天天压岁钱
-33 0,13 * * * node /scripts/jd_ttysq.js >> /scripts/logs/jd_ttysq.log 2>&1
 # 白条抽奖
 10 9 * * * node /scripts/jd_bt_sign.js >> /scripts/logs/jd_bt_sign.log 2>&1
 # 通天塔签到共建
