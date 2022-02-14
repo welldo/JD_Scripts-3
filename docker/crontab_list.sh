@@ -185,8 +185,6 @@
 22 6,18 * * * node /scripts/jx_jddt.js >> /scripts/logs/jx_jddt.log 2>&1
 # 京东通天塔--签到
 31 8,21 * * * node /scripts/jd_m_sign.js >> /scripts/logs/jd_m_sign.log 2>&1
-# 白条抽奖
-10 9 * * * node /scripts/jd_bt_sign.js >> /scripts/logs/jd_bt_sign.log 2>&1
 # 通天塔签到共建
 0 0,3 * * * node /scripts/jd_babel_sign.js >> /scripts/logs/jd_babel_sign.log 2>&1
 # 京东超级盒子
@@ -207,3 +205,9 @@
 3 0,11 * * * node /scripts/jd_wq_wxsign.js >> /scripts/logs/jd_wq_wxsign.log 2>&1
 #颜究种植园
 30 6-20/3 * * *  node /scripts/jd_xinruimz.js >> /scripts/logs/jd_xinruimz.log 2>&1
+#东东健康社区兑换5豆
+2 0 * * * node /scripts/jd_health_exchange_5.js >> /scripts/logs/jd_health_exchange_5.log 2>&1
+#东东健康社区兑换10豆
+1 0 * * * node /scripts/jd_health_exchange_10.js >> /scripts/logs/jd_health_exchange_10.log 2>&1
+#东东健康社区兑换20豆
+0 0 * * * node /scripts/jd_health_exchange_20.js >> /scripts/logs/jd_health_exchange_20.log 2>&1
