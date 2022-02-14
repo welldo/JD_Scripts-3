@@ -3,7 +3,12 @@
 #收集助力码
 30 * * * * sh +x /scripts/docker/auto_help.sh collect >> /scripts/logs/auto_help_collect.log 2>&1
 
-##############活动##############
+##############短期活动##############
+
+#2022新春快乐 击鼓助力
+15 10,22 1-14 2 * node /scripts/jd_HappyNewYear_Shares.js >> /scripts/logs/jd_HappyNewYear_Shares.log 2>&1
+
+##############长期活动##############
 
 #宠汪汪
 35 0-23/2 * * * node /scripts/jd_joy.js >> /scripts/logs/jd_joy.log 2>&1
@@ -120,7 +125,7 @@
 #特务
 1,10 0 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1
 #送豆得豆
-5 0,12 * * * node /scripts/jd_SendBean.js >> /scripts/logs/jd_SendBean.log 2>&1
+5 0,12 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
 #众筹许愿池
 20 0,2 * * * node /scripts/jd_wish.js >> /scripts/logs/jd_wish.log 2>&1
 #宠汪汪偷狗粮
@@ -180,7 +185,7 @@
 #玩一玩成就
 0 8,22 * * * node /scripts/jd_wyw.js >> /scripts/logs/jd_wyw.log 2>&1
 # 京喜签到-喜豆
-10 2,19 * * * node /scripts/jx_sign_xd.js >> /scripts/logs/jx_sign_xd.log 2>&1
+20 1,8 * * * node /scripts/jx_sign.js >> /scripts/logs/jx_sign.log 2>&1
 # 京东答题领金豆
 22 6,18 * * * node /scripts/jx_jddt.js >> /scripts/logs/jx_jddt.log 2>&1
 # 京东通天塔--签到
@@ -211,3 +216,21 @@
 1 0 * * * node /scripts/jd_health_exchange_10.js >> /scripts/logs/jd_health_exchange_10.log 2>&1
 #东东健康社区兑换20豆
 0 0 * * * node /scripts/jd_health_exchange_20.js >> /scripts/logs/jd_health_exchange_20.log 2>&1
+#京东小魔方
+30 3,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
+#东东电竞经理
+20 0-23/2 * * * node /scripts/jd_EsportsManager.js >> /scripts/logs/jd_EsportsManager.log 2>&1
+#京豆夺宝
+40,45 23 * * * node /scripts/jd_duobao.js >> /scripts/logs/jd_duobao.log 2>&1
+#京东金榜
+9 7 * * * node /scripts/jd_gold_sign.js >> /scripts/logs/jd_gold_sign.log 2>&1
+#京东特价翻翻乐
+20 0-23/3 * * * node /scripts/jd_jdtj_winner.js >> /scripts/logs/jd_jdtj_winner.log 2>&1
+#京喜工厂开团助力
+18 1 * * * node /scripts/jd_jx_factory.js >> /scripts/logs/jd_jx_factory.log 2>&1
+#京喜工厂商品列表详情
+0 0,7,19 * * * node /scripts/jd_jxgckc.js >> /scripts/logs/jd_jxgckc.log 2>&1
+#京东生鲜每日抽奖
+10 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
+#赚京豆-瓜分京豆
+10 0,9,12,15 * * * node /scripts/jd_zjd.js >> /scripts/logs/jd_zjd.log 2>&1
