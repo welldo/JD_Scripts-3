@@ -225,7 +225,7 @@
 #京东金榜
 9 7 * * * node /scripts/jd_gold_sign.js >> /scripts/logs/jd_gold_sign.log 2>&1
 #京东特价翻翻乐
-20 0-23/3 * * * node /scripts/jd_jdtj_winner.js >> /scripts/logs/jd_jdtj_winner.log 2>&1
+20 0-23/3 * * * node /scripts/jd_jdtj_winner.js >> /scripts/logs/jd_jdtj_winner.log 2>&1  
 #京喜工厂开团助力
 18 1 * * * node /scripts/jd_jx_factory.js >> /scripts/logs/jd_jx_factory.log 2>&1
 #京喜工厂商品列表详情
