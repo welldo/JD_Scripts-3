@@ -225,12 +225,12 @@
 #京东金榜
 9 7 * * * node /scripts/jd_gold_sign.js >> /scripts/logs/jd_gold_sign.log 2>&1
 #京东特价翻翻乐
-20 0-23/3 * * * node /scripts/jd_jdtj_winner.js >> /scripts/logs/jd_jdtj_winner.log 2>&1  
-#京喜工厂开团助力
-18 1 * * * node /scripts/jd_jx_factory.js >> /scripts/logs/jd_jx_factory.log 2>&1
+20 0-23/3 * * * node /scripts/jd_jdtj_winner.js >> /scripts/logs/jd_jdtj_winner.log 2>&1
 #京喜工厂商品列表详情
 0 0,7,19 * * * node /scripts/jd_jxgckc.js >> /scripts/logs/jd_jxgckc.log 2>&1
 #京东生鲜每日抽奖
 10 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
 #赚京豆-瓜分京豆
 10 0,9,12,15 * * * node /scripts/jd_zjd.js >> /scripts/logs/jd_zjd.log 2>&1
+#京喜工厂开团助力
+10 7 * * * node /scripts/jd_jx_factory.js >> /scripts/logs/jd_jx_factory.log 2>&1
