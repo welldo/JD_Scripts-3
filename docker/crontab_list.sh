@@ -5,8 +5,6 @@
 
 ##############短期活动##############
 
-#2022新春快乐 击鼓助力
-15 10,22 1-14 2 * node /scripts/jd_HappyNewYear_Shares.js >> /scripts/logs/jd_HappyNewYear_Shares.log 2>&1
 
 ##############长期活动##############
 
