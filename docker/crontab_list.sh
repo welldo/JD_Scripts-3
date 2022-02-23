@@ -5,8 +5,7 @@
 
 ##############短期活动##############
 
-#2022欢度元宵
-15 14,22 15 2 * node /scripts/jd_HappyNewYear_Share.js >> /scripts/logs/jd_HappyNewYear_Share.log 2>&1
+
 
 ##############长期活动##############
 
