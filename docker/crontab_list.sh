@@ -235,3 +235,5 @@
 30 18 * * * node /scripts/jd_try_notify.js >> /scripts/logs/jd_try_notify.log 2>&1
 #京东-京喜双签
 23 11,20 * * * node /scripts/jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
+#京东金融天天拼图
+20 0,16 * * * node /scripts/jd_ttpt.js >> /scripts/logs/jd_ttpt.log 2>&1
