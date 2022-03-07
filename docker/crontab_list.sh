@@ -5,7 +5,8 @@
 
 ##############短期活动##############
 
-
+#3.8女神节签到
+0 3,8 * * * node /scripts/jd_38qd.js  >> /scripts/logs/jd_38qd.log 2>&1
 
 ##############长期活动##############
 
@@ -15,7 +16,7 @@
 59 7,15,23 * * * node /scripts/jd_joy_reward.js >> /scripts/logs/jd_joy_reward.log 2>&1
 #点点券
 10 6,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
-#惊喜签到
+#京喜签到
 0 3,8 * * * node /scripts/jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
 #东东超市兑换奖品
 59 23 * * * node /scripts/jd_blueCoin.js >> /scripts/logs/jd_blueCoin.log 2>&1
