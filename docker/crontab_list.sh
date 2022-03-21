@@ -238,5 +238,5 @@
 23 11,20 * * * node /scripts/jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
 #京东金融天天拼图
 20 0,16 * * * node /scripts/jd_ttpt.js >> /scripts/logs/jd_ttpt.log 2>&1
-#汪汪乐园提现
-0 0 * * * node /scripts/jd_joy_tx.js >> /scripts/logs/jd_joy_tx.log 2>&1
+#小鸽有礼 - 每日抽奖
+13 1,22,23 * * * node /scripts/jd_daily_lottery.js >> /scripts/logs/jd_daily_lottery.log 2>&1
